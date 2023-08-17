@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieDetailViewController" customModule="TheMovieDBChallenge" customModuleProvider="target">
+            <connections>
+                <outlet property="movieTitleLabel" destination="fhB-hw-vdF" id="T59-J0-iEK"/>
+                <outlet property="overviewLabel" destination="Cdf-nK-trI" id="k5d-7Y-5Yv"/>
+                <outlet property="posterImageView" destination="0ge-4V-du1" id="XtZ-7l-L6R"/>
+                <outlet property="releaseDateLabel" destination="YN5-mx-qHB" id="Ykp-YU-nSP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="voteAverageLabel" destination="ucP-S4-2w5" id="ANf-iL-fg7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gato" translatesAutoresizingMaskIntoConstraints="NO" id="0ge-4V-du1">
+                    <rect key="frame" x="76.666666666666686" y="99" width="240" height="364"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="364" id="xA8-Eq-esl"/>
+                        <constraint firstAttribute="width" constant="240" id="yku-MB-nB3"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VNB-89-bbq">
+                    <rect key="frame" x="10" y="487.00000000000006" width="373" height="190.66666666666669"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="93" translatesAutoresizingMaskIntoConstraints="NO" id="TyO-rU-brx">
+                            <rect key="frame" x="0.0" y="0.0" width="373" height="48.666666666666664"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Uqf-I8-0gZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="232.33333333333334" height="48.666666666666664"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puss in Boots: The Last Wish" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhB-hw-vdF">
+                                            <rect key="frame" x="0.0" y="0.0" width="219.66666666666666" height="20.333333333333332"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022-12-07" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YN5-mx-qHB">
+                                            <rect key="frame" x="0.0" y="28.333333333333371" width="91.666666666666671" height="20.333333333333329"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZW9-l2-WPW">
+                                    <rect key="frame" x="325.33333333333331" y="0.0" width="47.666666666666686" height="48.666666666666664"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucP-S4-2w5">
+                                            <rect key="frame" x="0.0" y="0.0" width="47.666666666666664" height="48.666666666666664"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cdf-nK-trI">
+                            <rect key="frame" x="0.0" y="68.666666666666629" width="373" height="122"/>
+                            <string key="text">Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine lives, leaving him with only one life left. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="TyO-rU-brx" firstAttribute="leading" secondItem="VNB-89-bbq" secondAttribute="leading" id="XwQ-Rl-zMU"/>
+                        <constraint firstAttribute="trailing" secondItem="TyO-rU-brx" secondAttribute="trailing" id="djI-E1-ZXS"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="0ge-4V-du1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7eh-gI-fQV"/>
+                <constraint firstItem="VNB-89-bbq" firstAttribute="top" secondItem="0ge-4V-du1" secondAttribute="bottom" constant="24" id="c9I-lW-Rfo"/>
+                <constraint firstAttribute="trailing" secondItem="VNB-89-bbq" secondAttribute="trailing" constant="10" id="eU6-HN-cXD"/>
+                <constraint firstItem="VNB-89-bbq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="wdJ-OI-MgR"/>
+                <constraint firstItem="0ge-4V-du1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="zPq-Qs-fkP"/>
+            </constraints>
+            <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gato" width="500" height="750"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
